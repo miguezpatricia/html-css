@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links</title>
+  <style>
+
+                  /* SELETORES PERSONALIZADOS
+                     #  = id
+                     .  = class
+                     :  = pseudo-class
+                     :: = pseudo-element
+                     >  = children / filho
+                  */
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a{
+      color: rgb(197, 24, 24);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:visited{
+      color: darkred;
+    }
+
+    a:hover{
+      text-decoration: underline;
+      color: black;
+    }
+
+    a:active{
+      color: rgb(195, 195, 49);
+    }
+   
+    .especial::before{
+      content: '☑';
+      color: black;
+      
+    }
+    .especial {
+      background-color: rgb(205, 160, 160);
+    }
+
+    .especial::after{
+      content: '☑';
+      color: black;
+      font-weight: bold;
+    }
+
+    a::before{
+      content: '☛';
+      color: darkred;
+    }
+
+    a::after{
+      content: '☚';
+      text-decoration: none;
+      font-weight: normal;
+      color: darkred;
+      
+    }
+
+  </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+      <ul>
+        <li><a href="https://github.com/patricia-miguez" target="_blank" rel="external" class="especial">Repositório GitHub</a></li>
+        <li><a href="https://www.instagram.com/patriciabmiguez/" target="_blank" rel="external">Perfil Instagram</a></li>
+        <li><a href="https://www.facebook.com/patricia.b.miguez" target="_blank" rel="external">Perfil Facebook</a></li>
+      </ul>
+  
+</body>
+</html>
