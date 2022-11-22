@@ -6,13 +6,19 @@ body{
   background-color: rgb(204, 228, 154);
   margin: auto;
   padding: 60px;
-
 }
 
 nav{
   background-color: yellowgreen;
   margin: 30px 10px 30px 10px;
   padding: 50px;
+}
+  
+
+h1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:  #fff;
+  text-align: center;
 }
   
 /*estilo do nosso link*/
@@ -22,7 +28,7 @@ a{
   font-weight: bold;
   color: #fff;
   font-size: 1.4em;
-  padding-left: 22px;
+  padding-left: 0px;
   display: block;
   width: 160px;
   height: 40px;
@@ -31,16 +37,8 @@ a{
   
 /*ao passar o mouse sobre nosso link*/
 a:hover{
-  color: yellowgreen;
+  color: rgb(248, 248, 248);
   border-right: 2px solid #fff;
-}
-
-.menu{
-  position: relative;
-  list-style: none;
-  width: 182px;
-  padding: 40px 0;
-  margin: auto;
 }
 
 .menu{
@@ -48,7 +46,7 @@ a:hover{
   list-style: none;
   width: 500px;
   padding: 40px 0;
-  margin: auto;
+  margin: 40px;
 }
 
 .menu li{
@@ -76,10 +74,8 @@ a:hover{
   
   border-top-right-radius: 10px;
   -webkit-border-top-right-radius: 10px;
-  
-  border-bottom-right-radius: 10px;
-  -webkit-border-bottom-right-radius: 10px;
 }
+
 .menu li:hover .submenu{
   left: 182px;
   opacity: 1;
